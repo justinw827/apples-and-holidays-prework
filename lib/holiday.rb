@@ -74,7 +74,7 @@ def all_holidays_with_bbq(holiday_hash)
   myArray = []
   holiday_hash.each do |key, value|
     value.each do |key2, value2|
-      if value2.find_index then myArray.push(key2) end
+      if value2.find_index("BBQ") then myArray.push(key2) end
     end
   end
   return myArray
