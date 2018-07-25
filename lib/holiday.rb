@@ -58,7 +58,7 @@ def all_supplies_in_holidays(holiday_hash)
 
   holiday_hash.each do |key, value|
     case key
-    when ":winter"
+    when :winter
       puts "Winter:"
     else
       puts "Invalid input."
