@@ -77,4 +77,5 @@ def all_holidays_with_bbq(holiday_hash)
       if value2.find_index then myArray.push(key2) end
     end
   end
+  return myArray
 end
