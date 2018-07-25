@@ -55,15 +55,14 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  seasons = holiday_hash.keys
-  seasons.each do |key|
+  
+  holiday_hash.each do |key, value|
     case key
     when ":winter"
       puts "Winter:"
     else
       puts "Invalid input."
     end
-  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
