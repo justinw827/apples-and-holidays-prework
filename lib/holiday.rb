@@ -57,18 +57,8 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
 
   holiday_hash.each do |key, value|
-    case key
-    when :winter
-      puts "Winter:"
-    when :summer
-      puts "Summer:"
-    when :spring
-      puts "Spring:"
-    when :fall
-      puts "Fall:"
-    else
-      puts "Invalid input."
-    end
+    season = key.to_s.capitalize
+    puts "#{season}:"
   end
 end
 
