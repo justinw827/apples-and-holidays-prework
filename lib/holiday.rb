@@ -59,6 +59,9 @@ def all_supplies_in_holidays(holiday_hash)
     case season
     when ":winter"
       puts "Winter:"
+    else
+      puts "Invalid input."
+    end
 end
 
 def all_holidays_with_bbq(holiday_hash)
